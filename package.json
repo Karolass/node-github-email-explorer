@@ -1,0 +1,29 @@
+{
+  "name": "node-github-email-explorer",
+  "version": "0.2.0",
+  "description": "A tool to get email addresses from starred list of repositories on GitHub, translate from github-email-explorer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Karolass/node-github-email-explorer.git"
+  },
+  "bin": {
+    "ge-explore": "./bin/ge-explore"
+  },
+  "keywords": [
+    "github",
+    "email"
+  ],
+  "author": "Karolass",
+  "license": "MIT",
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "co": "^4.6.0",
+    "co-request": "^1.0.0",
+    "commander": "^2.9.0",
+    "progress": "^1.1.8"
+  }
+}
