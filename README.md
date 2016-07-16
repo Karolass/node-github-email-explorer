@@ -53,5 +53,5 @@ ge-explore https://github.com/Karolass/node-github-email-explorer
 
 example 2:
 ```bash
-ge-explore custom_config.json https://github.com/Karolass/node-github-email-explorer`
+ge-explore custom_config.json https://github.com/Karolass/node-github-email-explorer
 ```
