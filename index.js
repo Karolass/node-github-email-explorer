@@ -63,9 +63,13 @@ co(function* () {
   if (!options.star && !options.fork)
     options.star = true;  //set default if all false
 
-  //get starers email
+  //get stargazers email
   if (options.star)
     yield ghEmail.stargazersEmails(options.repoUser, options.repoName, github_api_auth);
+
+  //get forks email
+  if (options.fork)
+    yield ghEmail.forksEmails(options.repoUser, options.repoName, github_api_auth);
 
   //api status
   if (options.status) 

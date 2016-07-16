@@ -16,6 +16,8 @@ npm install -g node-github-email-explorer
 
 Your Github Setting -> OAuth applications -> Developer applications -> Register a new application
 
+The Client ID and Secret is for config below.
+
 ## Config
 ```bash
 vi config.json
@@ -52,6 +54,13 @@ ge-explore https://github.com/Karolass/node-github-email-explorer
 ```
 
 example 2:
+
 ```bash
 ge-explore custom_config.json https://github.com/Karolass/node-github-email-explorer
+```
+
+example 3 (get stargazers, forks and API status):
+
+```bash
+ge-explore https://github.com/OfficeDev/O365-iOS-Snippets -sfS
 ```
