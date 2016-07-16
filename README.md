@@ -8,18 +8,22 @@ Notice: The code is base on Nodejs v6.0.0 or later.
 
 ## Installation
 
-`npm install -g node-github-email-explorer`
+```bash
+npm install -g node-github-email-explorer
+```
 
 ## Github OAuth
 
 Your Github Setting -> OAuth applications -> Developer applications -> Register a new application
 
 ## Config
-`vi config.json`
+```bash
+vi config.json
+```
 
 type content below:
 
-```
+```json
 {
   "client_id": "<Github Client ID>",
   "client_secret": "<Github Client Secret>"
@@ -28,7 +32,7 @@ type content below:
 
 ## Usage
 
-```
+```bash
   Usage: ge-explore [options] <Github Repo URL>
          ge-explore [options] <config> <Github Repo URL>
 
@@ -42,7 +46,12 @@ type content below:
 ```
 
 example 1 (require local config.json and explore stargazer is Default): 
-`ge-explore https://github.com/Karolass/node-github-email-explorer`
+
+```bash
+ge-explore https://github.com/Karolass/node-github-email-explorer
+```
 
 example 2:
-`ge-explore custom_config.json https://github.com/Karolass/node-github-email-explorer`
+```bash
+ge-explore custom_config.json https://github.com/Karolass/node-github-email-explorer`
+```
