@@ -1,6 +1,6 @@
 {
   "name": "node-github-email-explorer",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "A tool to get email addresses from starred list of repositories on GitHub, translate from github-email-explorer",
   "main": "index.js",
   "scripts": {
