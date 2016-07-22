@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Node-GitHub-email-explorer by Karolass</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Node-GitHub-email-explorer</h1>
+        <h2></h2>
+        <a href="https://github.com/Karolass/node-github-email-explorer" class="button"><small>View project on</small> GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a id="node-github-email-explorer" class="anchor" href="#node-github-email-explorer" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>node-github-email-explorer</h1>
+
+<p>A tool to get email addresses from starred list of repositories on GitHub. </p>
+
+<p>Translate from <a href="https://github.com/yuecen/github-email-explorer">github-email-explorer</a></p>
+
+<p>Notice: The code is base on Nodejs v6.0.0 or later.</p>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<div class="highlight highlight-source-shell"><pre>npm install -g node-github-email-explorer</pre></div>
+
+<h2>
+<a id="github-oauth" class="anchor" href="#github-oauth" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Github OAuth</h2>
+
+<p>Your Github Setting -&gt; OAuth applications -&gt; Developer applications -&gt; Register a new application</p>
+
+<p>The Client ID and Secret is for config below.</p>
+
+<h2>
+<a id="config" class="anchor" href="#config" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Config</h2>
+
+<div class="highlight highlight-source-shell"><pre>vi config.json</pre></div>
+
+<p>type content below:</p>
+
+<div class="highlight highlight-source-json"><pre>{
+  <span class="pl-s"><span class="pl-pds">"</span>client_id<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>&lt;Github Client ID&gt;<span class="pl-pds">"</span></span>,
+  <span class="pl-s"><span class="pl-pds">"</span>client_secret<span class="pl-pds">"</span></span>: <span class="pl-s"><span class="pl-pds">"</span>&lt;Github Client Secret&gt;<span class="pl-pds">"</span></span>
+}</pre></div>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<div class="highlight highlight-source-shell"><pre>  Usage: ge-explore [options] <span class="pl-k">&lt;</span>Github Repo URL<span class="pl-k">&gt;</span>
+         ge-explore [options] <span class="pl-k">&lt;</span>config<span class="pl-k">&gt;</span> <span class="pl-k">&lt;</span>Github Repo URL<span class="pl-k">&gt;</span>
+
+  Options:
+
+    -h, --help     output usage information
+    -V, --version  output the version number
+    -s, --star     explore who star the repo. default option.
+    -f, --fork     explore who fork the repo
+    -S, --status   Github API status</pre></div>
+
+<p>example 1 (require local config.json and explore stargazer is Default): </p>
+
+<div class="highlight highlight-source-shell"><pre>ge-explore https://github.com/Karolass/node-github-email-explorer</pre></div>
+
+<p>example 2:</p>
+
+<div class="highlight highlight-source-shell"><pre>ge-explore custom_config.json https://github.com/Karolass/node-github-email-explorer</pre></div>
+
+<p>example 3 (get stargazers, forks and API status):</p>
+
+<div class="highlight highlight-source-shell"><pre>ge-explore https://github.com/OfficeDev/O365-iOS-Snippets -sfS</pre></div>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/Karolass/node-github-email-explorer/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/Karolass/node-github-email-explorer/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/Karolass/node-github-email-explorer"></a> is maintained by <a href="https://github.com/Karolass">Karolass</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
